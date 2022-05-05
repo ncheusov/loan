@@ -29,6 +29,7 @@ export default class MainSlider extends Slider {
         } catch(e){}
 
         this.slides.forEach(slide => {
+            slide.classList.add('animated', 'bounceInUp');
             slide.style.display = 'none';
         });
 
